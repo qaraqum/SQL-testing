@@ -1,9 +1,9 @@
 # SQL cheat sheet
 ## Querying data from a table
-Query data in columns c1, c2 from a table
+- Query data in columns c1, c2 from a table:
 > SELECT c1, c2 FROM t;
--
-Query all rows and columns from a table
+
+- Query all rows and columns from a table:
 > SELECT * FROM t;
 
 Query data and filter rows with a condition
