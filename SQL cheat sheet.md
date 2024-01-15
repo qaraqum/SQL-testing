@@ -2,7 +2,7 @@
 ## Querying data from a table
 Query data in columns c1, c2 from a table
 > SELECT c1, c2 FROM t;
-
+---
 Query all rows and columns from a table
 > SELECT * FROM t;
 
@@ -165,19 +165,9 @@ Create a unique index on c3, c4 of the t table
 ## Managing triggers
 Create or modify a trigger
 > CREATE OR MODIFY TRIGGER trigger_name WHEN EVENT ON table_name TRIGGER_TYPE EXECUTE stored_procedure;
-
-WHEN:
-BEFORE – invoke before the event occurs
-AFTER – invoke after the event occurs
-
-EVENT:
-INSERT – invoke for INSERT
-UPDATE – invoke for UPDATE
-DELETE – invoke for DELETE
-
-TRIGGER_TYPE:
-FOR EACH ROW
-FOR EACH STATEMENT
+WHEN: BEFORE, AFTER.
+EVENT: INSERT, UPDATE, DELETE
+TRIGGER_TYPE: FOR EACH ROW, FOR EACH STATEMENT
 
 Delete a specific trigger
 > DROP TRIGGER trigger_name;
